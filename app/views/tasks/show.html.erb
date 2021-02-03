@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @task.user_id %>
+</p>
+
+<p>
+  <strong>Source page:</strong>
+  <%= @task.source_page_id %>
+</p>
+
+<p>
+  <strong>Target parent page:</strong>
+  <%= @task.target_parent_page_id %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

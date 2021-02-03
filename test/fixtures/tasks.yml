@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  source_page_id: MyString
+  target_parent_page_id: MyString
+
+two:
+  user: two
+  source_page_id: MyString
+  target_parent_page_id: MyString

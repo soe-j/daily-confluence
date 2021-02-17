@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
-  def index
-  end
+  before_action :auth
 
-  def login
+  def index
   end
 end

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root to: redirect('/tasks')
   get '/login', to: 'users#new'
   resources :tasks
   resources :users

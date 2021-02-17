@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  root 'home#index'
   get 'home/login'
   resources :tasks
   resources :users

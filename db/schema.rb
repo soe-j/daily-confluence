@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_02_03_123020) do
     t.string "token"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["token"], name: "index_users_on_token", unique: true
   end
 
   add_foreign_key "tasks", "users"

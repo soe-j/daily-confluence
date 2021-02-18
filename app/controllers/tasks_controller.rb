@@ -45,6 +45,6 @@ class TasksController < ApplicationController
     end
 
     def task_params
-      params.require(:task).permit(:user_id, :source_page_id, :target_parent_page_id)
+      params.require(:task).permit(:user_id, :source_page_url, :target_parent_page_url)
     end
 end

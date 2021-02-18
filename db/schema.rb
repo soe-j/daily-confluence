@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2021_02_03_123020) do
 
   create_table "tasks", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.string "source_page_id"
-    t.string "target_parent_page_id"
+    t.string "source_page_url"
+    t.string "target_parent_page_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_tasks_on_user_id"

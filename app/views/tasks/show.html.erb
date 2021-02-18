@@ -7,12 +7,12 @@
 
 <p>
   <strong>Source page:</strong>
-  <%= @task.source_page_id %>
+  <%= @task.source_page_url %>
 </p>
 
 <p>
   <strong>Target parent page:</strong>
-  <%= @task.target_parent_page_id %>
+  <%= @task.target_parent_page_url %>
 </p>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
